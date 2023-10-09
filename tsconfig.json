@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", // You can specify a different target if needed
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // Allowing JavaScript files can be useful in some cases
+    "skipLibCheck": true, // Skipping type checking of declaration files can improve build performance
+    "strict": true, // Enabling strict mode for better type checking
+    "noEmit": true, // No JavaScript files will be emitted
+    "esModuleInterop": true, // Allowing ES modules interoperability
+    "module": "esnext", // ES modules are the recommended module system for Next.js
+    "moduleResolution": "node", // Using Node.js style module resolution
+    "resolveJsonModule": true, // Allowing importing JSON files
+    "isolatedModules": true, // Disallowing file level imports to improve type checking
+    "jsx": "preserve", // Preserving JSX in output for use with a JSX runtime
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
